@@ -1,0 +1,17 @@
+// Import frameworks
+@import './framework/materialize';
+@import './framework/materialdesignicons';
+@import './framework/swiper';
+
+// Import parts
+@import './parts/vars';
+@import './parts/media';
+@import './parts/custom_grid';
+@import './parts/typography';
+@import './parts/helpers';
+@import './parts/header';
+@import './parts/footer';
+
+// Import pages
+@import './pages/main';
+@import './pages/policy-n-agreement';

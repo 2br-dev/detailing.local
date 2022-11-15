@@ -1,0 +1,172 @@
+body{
+
+	background: $paper;
+
+	@media(max-width: $small){
+		padding-bottom: 60px;
+	}
+
+	& .lazy{
+
+		&.h{
+			aspect-ratio: 4 / 3;
+		}
+
+		&.v{
+			aspect-ratio: 3 / 4;
+		}
+
+		&.q{
+			aspect-ratio: 1 / 1;
+		}
+	}
+
+	& .pin{
+		position: -webkit-sticky;
+		position: sticky;
+		top: 60px;
+	}
+
+	& .bttn{
+
+		border: 1px solid #fff;
+		color: #fff;
+		display: inline-block;
+		font-size: calc(18px + .1vmax);
+		line-height: 2em;
+		padding: 0 1em;
+		border-top-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+		transition: background-color .2s;
+
+		&:hover{
+			background-color: rgba(white, .2);
+		}
+
+		&.accent{
+			background-color: $red;
+
+			&:hover{
+				background-color: lighten(red, 10);
+			}
+		}
+	}
+
+	& .input-field{
+
+		border-bottom: 1px solid $text;
+		position: relative;
+		padding-top: 8px;
+		margin: 6px 0;
+
+		& input[type="text"],
+		& input[type="phone"],
+		& input[type="email"],
+		& textarea
+		{
+			display: block;
+			width: 100%;
+			background: transparent;
+			line-height: 1.6em;
+			font-family: 'Montserrat';
+			font-size: calc(16px + .1vmax);
+			border: 0;
+
+			&::placeholder{
+				color: transparent;
+			}
+
+			& ~ label{
+				pointer-events: none;
+				position: absolute;
+				z-index: 1;
+				font-family: 'Montserrat';
+				font-size: calc(16px + .1vmax);
+				line-height: 1em;
+				transition: top .2s, font-size .2s, left .2s;
+				top: 18px;
+				left: 2px;
+			}
+			
+			&:not(:placeholder-shown), &:focus{
+
+				outline: none;
+
+				& ~ label{
+					font-size: 12px;
+					top: 0;
+				}
+			}
+
+			& ~ .indicator{
+				position: absolute;
+				bottom: -2px;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background: $red;
+				transition: transform .2s;
+				transform: scaleX(0);
+			}
+
+			&:focus ~ .indicator{
+				transform: none;
+			}
+		}
+	}
+
+	& .modal{
+
+		width: 45vmax;
+		max-width: 96%;
+
+		& h3{
+
+			font-size: calc(26px + .2vmax);
+			position: relative;
+			display: inline-block;
+			line-height: 1.2em;
+
+			&:before{
+				content: '';
+				display: block;
+				width: 12px;
+				height: 100%;
+				background: $red;
+				position: absolute;
+				top: 0;
+				left: -36px;
+			}
+		}
+	}
+
+	& .check-field{
+
+		& input[type="checkbox"]{
+
+			display: none;
+
+			& ~ label{
+
+				user-select: none;
+				
+				&:before{
+					content: '\F0131';
+					font-family: 'Material Design Icons';
+					color: $red;
+				}
+
+				& a{
+					color: $red;
+				}
+			}
+
+			&:checked ~ label{
+
+				&:before{
+					content: '\F0132';
+				}
+			}
+		}
+	}
+}

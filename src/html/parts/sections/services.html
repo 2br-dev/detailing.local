@@ -1,0 +1,38 @@
+<section id="services">
+	<div class="row hide-l-down flex">
+		<div class="col l6 m12">
+			<div class="swiper" id="service-images">
+				<div class="swiper-wrapper">
+					@@loop('../service-image.html', '../html/data/services.json')
+				</div>
+				<div class="service-navigation">
+					<a href="" class="service-image-prev">‹</a>
+					<a href="" class="service-image-next">›</a>
+				</div>
+				<ul class="service-image-pagination">
+					@@loop('../service-image-page.html', '../html/data/services.json')
+				</ul>
+			</div>
+		</div>
+		<div class="col l6 m12">
+			<div class="row">
+				<div class="col l10 offset-l1">
+					<div class="service-description-wrapper">
+						<h2>Наши услуги</h2>
+						<div class="swiper" id="service-text">
+							<div class="swiper-wrapper">
+								@@loop('../service-text.html', '../html/data/services.json')
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row hide-l-up mobile-services">
+		<div class="col s10 offset-s1 xs12">
+			<h2>Наши услуги</h2>
+		</div>
+		@@loop('../service-block.html', '../html/data/services.json')
+	</div>
+</section>

@@ -1,0 +1,42 @@
+footer{
+
+	background: #fff;
+	display: flex;
+	padding: 2vmax;
+	position: relative;
+
+	& .footer-copyrights, & .footer-credits{
+		width: 40%;
+		flex-grow: 1;
+	}
+
+	& .footer-credits{
+		text-align: right;
+
+		& a{
+			color: $red;
+			font-family: 'Burt';
+			text-transform: uppercase;
+		}
+	}
+
+	&:before{
+		content: '';
+		display: block;
+		width: 35%;
+		height: 8px;
+		background: $red;
+		position: absolute;
+		top: -8px;
+		left: 0;
+	}
+
+	@media(max-width: $small){
+		flex-direction: column;
+
+		& .footer-copyrights, & .footer-credits{
+			width: 100%;
+			text-align: center;
+		}
+	}
+}

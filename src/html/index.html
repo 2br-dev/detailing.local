@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('./parts/head.html', {title: "Детейлинг центр"})
+</head>
+<body>
+	<main>
+		@@include('./parts/sections/hero.html')
+		@@include('./parts/header.html')
+		@@include('./parts/sections/about.html')
+		@@include('./parts/sections/services.html')
+		@@include('./parts/sections/brands.html')
+		@@include('./parts/sections/price.html')
+		@@include('./parts/sections/contacts.html')
+	</main>
+	<form action="" class="modal" id="request-form">
+		<div class="modal-content">
+			<div class="row modal-header">
+				<div class="col s12">
+					<h3>Расчёт стоимости</h3>
+					<a href="" class="modal-close"><i class="mdi mdi-close"></i></a>
+				</div>
+			</div>
+			<div class="row modal-inputs">
+				<div class="col l5 offset-l2 m6 s12">
+					<div class="input-field"><input type="text" placeholder="Марка вашего автомобиля"><label for="">Марка вашего автомобиля</label></div>
+				</div>
+				<div class="col l5 m6 s12">
+					<div class="input-field"><input type="text" placeholder="Модель автомобиля"><label for="">Модель автомобиля</label></div>
+				</div>
+				<div class="col l5 offset-l2 m6 s12">
+					<div class="input-field"><input type="text" placeholder="Ваше имя, номер телефона"><label for="">Ваше имя, номер телефона</label></div>
+				</div>
+				<div class="col l5 offset-l2 m6 s12">
+					<div class="input-field"><input type="text" placeholder="Контактный телефон"><label for="">Контактный телефон</label></div>
+				</div>
+				<div class="col s12 right-align">
+					<button class="bttn accent">Отправить заявку</button>
+				</div>
+			</div>
+		</div>
+	</form>
+	@@include('./parts/footer.html')
+	@@include('./parts/scripts.html')
+</body>
+</html>
