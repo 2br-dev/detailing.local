@@ -51,6 +51,26 @@ section{
 			}
 		}
 
+		& .phone-block{
+
+			& .phones{
+
+				border-top: 1px solid #fff;
+				border-bottom: 1px solid #fff;
+				width: fit-content;
+				display: inline-block;
+
+				& a{
+					color: #fff;
+					font-family: 'Oswald';
+					font-size: 2rem;
+					margin-left: 20px;
+					display: inline-block;
+					line-height: 2em;
+				}
+			}
+		}
+
 		& .separator{
 			flex-grow: 1;
 		}
@@ -252,7 +272,6 @@ section{
 				}
 			}
 		}
-
 
 		& #service-images{
 

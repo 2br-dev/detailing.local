@@ -22983,7 +22983,8 @@ body {
       font-size: calc(26px + .2vmax);
       position: relative;
       display: inline-block;
-      line-height: 1.2em; }
+      line-height: 1.2em;
+      margin: 0; }
       body .modal h3:before {
         content: '';
         display: block;
@@ -22993,6 +22994,9 @@ body {
         position: absolute;
         top: 0;
         left: -36px; }
+    body .modal .modal-close {
+      font-size: 32px;
+      color: #333; }
   body .check-field input[type="checkbox"] {
     display: none; }
     body .check-field input[type="checkbox"] ~ label {
@@ -23047,7 +23051,12 @@ header {
       flex-grow: 1; }
     header ul li .phone {
       color: #C62035;
-      font-weight: bold; }
+      font-weight: bold;
+      display: block;
+      height: 100%; }
+      header ul li .phone i {
+        display: block;
+        font-size: 28px; }
     @media (max-width: 800px) {
       header ul li {
         flex-grow: 1;
@@ -23083,6 +23092,41 @@ header {
         font-size: calc(27px + .5vmax);
         line-height: 2.2em;
         display: inline; } }
+  header .floating-action-bttn {
+    position: relative;
+    position: fixed;
+    bottom: 2vmax;
+    right: 2vmax;
+    display: block;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #C62035;
+    color: #fff;
+    font-size: 32px; }
+    header .floating-action-bttn:before, header section.floating-action-bttn#price:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 50%;
+      animation: pulse 3s infinite; }
+    @media (max-width: 800px) {
+      header .floating-action-bttn {
+        bottom: calc(2vmax + 70px); } }
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(198, 32, 53, 0.3); }
+  100% {
+    box-shadow: 0 0 0 20px rgba(198, 32, 53, 0); } }
 
 footer {
   background: #fff;
@@ -23151,6 +23195,19 @@ section {
             width: 25vmax; } }
       section#hero .logo-block h1 {
         color: #fff; }
+    section#hero .phone-block .phones {
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      width: -moz-fit-content;
+      width: fit-content;
+      display: inline-block; }
+      section#hero .phone-block .phones a {
+        color: #fff;
+        font-family: 'Oswald';
+        font-size: 2rem;
+        margin-left: 20px;
+        display: inline-block;
+        line-height: 2em; }
     section#hero .separator {
       flex-grow: 1; }
     section#hero #bottom-navi ul {

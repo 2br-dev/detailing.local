@@ -22,11 +22,18 @@
 	<main>
 		<section id="hero" class="lazy" data-src="/img/hero.jpg">
 	<div class="container">
-		<div class="row">
+		<div class="row flex vcenter">
 			<div class="col xl6 l8 m12">
 				<div class="logo-block">
 					<div class="lazy q" data-src="/img/logo.svg"></div>
 					<h1>Надёжная защита кузова и салона Вашего авто</h1>
+				</div>
+			</div>
+			<div class="col xl6 l4 m12 align-right-l-up align-center-l-down phone-block">
+				<div class="phones">
+					<a target="_blank" rel="nofollow" href="https://wa.me/+79186505353"><i class="mdi mdi-whatsapp"></i></a>
+					<br class="hide-m-up">
+					<a href="tel:+79186505353">(918) 650-53-53</a>
 				</div>
 			</div>
 		</div>
@@ -70,8 +77,12 @@
 			</a>
 		</li>
 		<li class="separator hide-l-down"></li>
+		<li class="hide-l-down"><a class="phone" target="_blank" rel="nofollow" href="https://wa.me/+79186505353"><i class="mdi mdi-whatsapp"></i></a></li>
 		<li class="hide-l-down"><a href="tel:+79186505353" class="phone">(918) 650-53-53</a></li>
 	</ul>
+	<a href="https://wa.me/+79186505353" class="floating-action-bttn z-depth-3 hide-m-up">
+		<i class="mdi mdi-whatsapp"></i>
+	</a>
 </header>
 		<section id="about">
 	<div class="container">
@@ -407,18 +418,6 @@
 	<img src="" alt="" class="lazy brand" data-src="/img/brands/hyundai.svg">
 </div><div class="swiper-slide" id="geely">
 	<img src="" alt="" class="lazy brand" data-src="/img/brands/geely.svg">
-</div><div class="swiper-slide" id="baic">
-	<img src="" alt="" class="lazy brand" data-src="/img/brands/baic.svg">
-</div><div class="swiper-slide" id="brilliance">
-	<img src="" alt="" class="lazy brand" data-src="/img/brands/brilliance.svg">
-</div><div class="swiper-slide" id="byd">
-	<img src="" alt="" class="lazy brand" data-src="/img/brands/byd.svg">
-</div><div class="swiper-slide" id="changhan">
-	<img src="" alt="" class="lazy brand" data-src="/img/brands/changhan.svg">
-</div><div class="swiper-slide" id="changhe">
-	<img src="" alt="" class="lazy brand" data-src="/img/brands/changhe.svg">
-</div><div class="swiper-slide" id="dongfeng">
-	<img src="" alt="" class="lazy brand" data-src="/img/brands/dongfeng.svg">
 </div><div class="swiper-slide" id="exceed">
 	<img src="" alt="" class="lazy brand" data-src="/img/brands/exceed.svg">
 </div><div class="swiper-slide" id="faw">
@@ -486,10 +485,15 @@
 </section>
 <div class="modal" id="calculate-request">
 	<div class="modal-content">
-		<div class="row">
-			<div class="col s12">
+		<div class="row no-margin">
+			<div class="col s10 xs10 t10">
 				<h3>Расчитать стоимость работ</h3>
 			</div>
+			<div class="col s2 xs2 t2 right-align no-padding">
+				<a href="#!" class="modal-close"><i class="mdi mdi-close"></i></a>
+			</div>
+		</div>
+		<div class="row">
 			<div class="col l5 m6 offset-l2">
 				<div class="input-field"><input type="text" placeholder="Марка"><label for="">Марка</label><div class="indicator"></div></div>
 			</div>
@@ -562,33 +566,6 @@
 	</div>
 </section>
 	</main>
-	<form action="" class="modal" id="request-form">
-		<div class="modal-content">
-			<div class="row modal-header">
-				<div class="col s12">
-					<h3>Расчёт стоимости</h3>
-					<a href="" class="modal-close"><i class="mdi mdi-close"></i></a>
-				</div>
-			</div>
-			<div class="row modal-inputs">
-				<div class="col l5 offset-l2 m6 s12">
-					<div class="input-field"><input type="text" placeholder="Марка вашего автомобиля"><label for="">Марка вашего автомобиля</label></div>
-				</div>
-				<div class="col l5 m6 s12">
-					<div class="input-field"><input type="text" placeholder="Модель автомобиля"><label for="">Модель автомобиля</label></div>
-				</div>
-				<div class="col l5 offset-l2 m6 s12">
-					<div class="input-field"><input type="text" placeholder="Ваше имя, номер телефона"><label for="">Ваше имя, номер телефона</label></div>
-				</div>
-				<div class="col l5 offset-l2 m6 s12">
-					<div class="input-field"><input type="text" placeholder="Контактный телефон"><label for="">Контактный телефон</label></div>
-				</div>
-				<div class="col s12 right-align">
-					<button class="bttn accent">Отправить заявку</button>
-				</div>
-			</div>
-		</div>
-	</form>
 	<footer>
 	<div class="footer-copyrights">
 		© 2022, Все права защищены

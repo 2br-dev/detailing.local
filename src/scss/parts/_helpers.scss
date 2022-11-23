@@ -126,6 +126,7 @@ body{
 			position: relative;
 			display: inline-block;
 			line-height: 1.2em;
+			margin: 0;
 
 			&:before{
 				content: '';
@@ -137,6 +138,11 @@ body{
 				top: 0;
 				left: -36px;
 			}
+		}
+
+		& .modal-close{
+			font-size: 32px;
+			color: $text;
 		}
 	}
 
